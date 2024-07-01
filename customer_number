@@ -1,0 +1,19 @@
+// C++
+
+bool is_valid(string customer_number){
+
+int counter_for_characters = 0;
+int counter_fot_digits = 0;
+    for (int i = 0; i < customer_number.length(); i++){
+        if (isalpha(customer_number[i]) == 0){
+            counter_for_characters++;
+        } else if (isdigit(customer_number[i]) == 0) {
+            counter_fot_digits++;
+        } 
+    }
+    if (counter_for_characters >= 2 && (counter_fot_digits  >= 4)) {
+        cout << "The customer nunmber " << customer_number << " is valid" << endl;
+    } else {
+        cout << "You are missing one of the two requirements. Try again!" << endl;
+    }
+}
