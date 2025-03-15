@@ -14,7 +14,7 @@ struct Employee {
         };
     std::tuple<std::string, std::string, std::string, std::string, std::string> password = {
         "franciscofrancisco", "samirsamir",
-        "chayachaya", "emilioemilio",
+        "lollol", "lol",
         "himomhimom"};
     int time_in;
     int time_out;
